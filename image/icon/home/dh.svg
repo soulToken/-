@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>dh_slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="19.7464225%" y1="10.8238281%" x2="77.6411856%" y2="90.0563353%" id="linearGradient-1">
+            <stop stop-color="#F8C47B" offset="0%"></stop>
+            <stop stop-color="#BB650D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-105.000000, -255.000000)">
+            <g id="dh" transform="translate(105.000000, 255.000000)">
+                <rect id="Rectangle-2" fill="url(#linearGradient-1)" x="0" y="0" width="50" height="50" rx="20"></rect>
+                <path d="M24.76,38.52 C17.1605618,38.52 11,32.3594382 11,24.76 C11,17.1605618 17.1605618,11 24.76,11 C32.3594382,11 38.52,17.1605618 38.52,24.76 C38.52,32.3594382 32.3594382,38.52 24.76,38.52 Z M25.9066667,24.76 L25.9066667,17.3066667 C25.9066667,16.3567369 25.1365964,15.5866667 24.1866667,15.5866667 C23.2367369,15.5866667 22.4666667,16.3567369 22.4666667,17.3066667 L22.4666667,26.2888889 C22.4666667,27.3443664 23.3223003,28.2 24.3777778,28.2 L32.2133333,28.2 C33.1632631,28.2 33.9333333,27.4299298 33.9333333,26.48 C33.9333333,25.5300702 33.1632631,24.76 32.2133333,24.76 L25.9066667,24.76 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

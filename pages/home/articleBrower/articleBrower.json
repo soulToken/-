@@ -1,0 +1,5 @@
+{
+  "navigationBarTitleText": "文章浏览",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
+}

@@ -1,0 +1,46 @@
+page,
+.container{
+  background: #F2F2F2;
+}
+.group-register-item{
+  background: #F2F2F2 !important;
+}
+.article-item{
+  display: flex;
+  padding: 16px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+}
+.article-content{
+  width: 450rpx;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.article-image{
+  width: 100%;
+  height: 400rpx;
+}
+.article-image image{
+  width: 100%;
+  height: 100%;
+}
+.article-title{
+  color: #000000;
+  font-size: 36rpx;
+  width: 450rpx;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2;
+  display:-webkit-box;
+}
+.article-date{
+  color: #bbb;
+  font-size: 13px;
+  margin-top: 10px;
+  display: none;
+}

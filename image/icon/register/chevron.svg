@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron_slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-347.000000, -316.000000)" fill="#808080">
+            <path d="M347.219113,324.209311 C346.926962,323.920851 346.926962,323.45482 347.219113,323.16561 L354.152815,316.312998 C354.57456,315.895667 355.260739,315.895667 355.683233,316.312998 C356.104979,316.730328 356.104979,317.407648 355.683233,317.824978 L349.751832,323.687836 L355.683233,329.549194 C356.104979,329.967274 356.104979,330.644593 355.683233,331.061924 C355.260739,331.479254 354.57456,331.479254 354.152815,331.061924 L347.219113,324.209311 Z" id="Chevron" transform="translate(351.499771, 323.687461) scale(-1, 1) translate(-351.499771, -323.687461) "></path>
+        </g>
+    </g>
+</svg>

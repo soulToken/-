@@ -1,0 +1,19 @@
+<import src="../../../wxParse/wxParse.wxml" />
+<view >
+    <view class="img_container">
+        <image src='{{result.activityPicture}}'></image>
+    </view>
+    <view class="clisName">
+        <text class='doctor-name'>{{result.activityName}}</text> 
+    </view>
+    <view  class="clisName" wx:if="{{result.activityPrice}}">
+        <text class='doctor-name'>￥{{result.activityPrice}}</text> 
+    </view>
+    <view  class="clisName" wx:else>
+            <text class='doctor-name'>暂无活动价格</text> 
+        </view>
+    <view  class="article">
+            <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+ </view>
+      

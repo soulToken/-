@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>wz_slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(0.000000, -61.000000)" fill-rule="nonzero">
+            <g id="wz" transform="translate(0.000000, 61.000000)">
+                <rect id="Rectangle-path" fill="#000000" opacity="0" x="0" y="0" width="30" height="30"></rect>
+                <path d="M3,5.991 C3,4.3395 4.3425,3 5.991,3 L24.009,3 C25.6605,3 27,4.3425 27,5.991 L27,24.009 C26.9991724,25.6605407 25.6605407,26.9991724 24.009,27 L5.991,27 C4.33945925,26.9991724 3.00082763,25.6605407 3,24.009 L3,5.991 Z M13.5,12 L22.5,12 L22.5,9 L13.5,9 L13.5,12 Z M13.5,16.5 L22.5,16.5 L22.5,13.5 L13.5,13.5 L13.5,16.5 Z M13.5,21 L22.5,21 L22.5,18 L13.5,18 L13.5,21 Z M6.75,12 L11.25,12 L11.25,9 L6.75,9 L6.75,12 Z M6.75,16.5 L11.25,16.5 L11.25,13.5 L6.75,13.5 L6.75,16.5 Z M6.75,21 L11.25,21 L11.25,18 L6.75,18 L6.75,21 Z" id="Shape" fill="#138AED"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+<view class='person-container'>
+
+    <view  class="notice_top">
+        <text>为了更及时准确的为您提供服务 我们将短信验证您的手机</text>
+    </view>
+
+ 
+</view>
+
+<view >
+  
+    <view >
+     
+      <view  >
+          <view class="input_container">
+             
+                  <image class="icon_phone"  src="/image/png/phone_phone@3x.png"></image>
+             
+              <view class="flex_1">
+                  <input type="number" class="input" placeholder="请输入手机号"   bindinput="getPhone" value="{{showPhone}}" maxlength="11" />
+              </view>
+          </view>
+          <view class="input_container">
+    
+              <image  class="icon_phone"  src="/image/png/phone_verification@3x.png"></image>
+          
+              <view class="flex_1">
+              <input type="number" class="input" value="" placeholder="请输入验证码"  bindinput="getVerifyCode" maxlength="6" />
+              </view>
+                    <text style="font-size:16px;color:rgba(0,128,255,1);margin-right:44rpx;" bindtap="getCode">{{btnText}}</text>
+          </view>
+          <view class="foot_btn  mr20"  bindtap="bindMobile">
+                提交
+          </view>
+  
+      </view>
+
+
+    </view>
+
+   
+  </view>

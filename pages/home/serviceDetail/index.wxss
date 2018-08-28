@@ -1,0 +1,29 @@
+
+.img_container{
+    width:100%;
+}
+.img_container image{
+    width:100%;
+}
+.clisName{
+    padding-left:24rpx;
+}
+.article{
+    padding:24rpx;
+}
+.foot_btn {
+    width: 750rpx;
+    height: 88rpx;
+    border-radius: 14px;
+    border: 1px solid rgba(165, 165, 165, 1);
+    float: left;
+    line-height: 88rpx;
+    text-align:center;
+    position:fixed;
+    bottom:0;
+  }
+  .mr20 {
+    float:right;
+    background:rgba(177,131,84,1);
+    color:rgba(255,255,255,1);
+  }

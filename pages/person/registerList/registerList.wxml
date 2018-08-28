@@ -1,0 +1,85 @@
+<wxs module="m1" src="../../../utils/common.wxs"></wxs>
+<view style="width:100%;height:100%;position:relative;">
+  <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">待就诊</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">历史预约</view>
+  </view>
+  <swiper class='swiper-tab-content' current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+
+      <swiper-item>
+        <scroll-view scroll-y="true">
+          <view class='group'  wx:if="{{list.length>0}}">
+            <view class='group-item' wx:for="{{list}}">
+              <view class='register-item'>
+                <view class='register-hosp-bar'>
+                  <view class='hosp-icon'>
+                    <image src='/image/tabBar/1.png'></image>
+                  </view>
+                  <text class='hosp-name'>{{item.clinicName}}</text>
+                  <text class='dept-name'>{{item.classifyStr}}</text>
+                </view>
+                <view class='register-key-value'>
+                  <text class='register-key'>就诊人:</text>
+                  <text class='register-value' wx:if="{{item.appointmentName}}">{{item.appointmentName}}</text>
+                </view>
+                <view class='register-key-value'>
+                  <text class='register-key'>就诊项目:</text>
+                  <text class='register-value' wx:if="{{item.appointmentServeritem}}">{{item.appointmentServeritem}}</text>
+                  <text class='register-value' wx:else>默认项目</text>
+                </view>
+                <view class='register-key-value'>
+                  <text class='register-key'>预约时间:</text>
+                  <text class='register-value'>{{item.appointmentDate}} {{m1.getDay(item.appointmentDate)}} {{item.appointmentTime}}</text>
+                </view>
+                <view class="cancel-register-btn" data-item="{{item.id}}" bindtap="cancel">
+                  <text class="cancelAlert">取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+              <no-data ></no-data>
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        <scroll-view  scroll-y="true" bindscrolltolower="lower">
+          <view class='group'  wx:if="{{list2.length>0}}">
+            <view class='group-item' wx:for="{{list2}}">
+              <view class='register-item'>
+                <view class='register-hosp-bar'>
+                  <view class='hosp-icon'>
+                    <image src='/image/tabBar/1.png'></image>
+                  </view>
+                  <text class='hosp-name'>{{item.clinicName}}</text>
+                  <text class='dept-name'>{{item.classifyStr}}</text>
+                </view>
+                <view class='register-key-value'>
+                  <text class='register-key'>就诊人:</text>
+                  <text class='register-value' wx:if="{{item.appointmentName}}">{{item.appointmentName}}</text>
+                </view>
+                <view class='register-key-value'>
+                  <text class='register-key'>就诊项目:</text>
+                  <text class='register-value' wx:if="{{item.appointmentServeritem}}">{{item.appointmentServeritem}}</text>
+                  <text class='register-value' wx:else>默认项目</text>
+                </view>
+                <view class='register-key-value'>
+                  <text class='register-key'>预约时间:</text>
+                  <text class='register-value'>{{item.appointmentDate}} {{m1.getDay(item.appointmentDate)}} {{item.appointmentTime}}</text>
+                </view>
+                <image class="status" wx:if="{{item.appointmentStatus=='3'}}" style="width:130px;height:130px;"  src="/image/svg/weidao.svg"></image>
+                <image class="status" wx:if="{{item.appointmentStatus=='4'}}" style="width:130px;height:130px;"  src="/image/svg/cancle.svg"></image>
+                <image class="status" wx:if="{{item.appointmentStatus=='5'}}" style="width:130px;height:130px;"  src="/image/svg/jiuzhen.svg"></image>
+                <!-- <view class="cancel-register-btn">
+                  <text>取消预约</text>
+                </view> -->
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+              <no-data ></no-data>
+          </view>
+        </scroll-view>
+      </swiper-item>
+  </swiper>
+</view>

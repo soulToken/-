@@ -1,0 +1,8 @@
+
+var dateArr=['周日',"周一",'周二','周三','周四','周五','周六'];
+  var getDay=function(date){
+ 
+  var day=getDate(date).getDay()
+  return dateArr[day]
+}
+module.exports.getDay = getDay;

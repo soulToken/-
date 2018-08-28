@@ -1,0 +1,19 @@
+<import src="../../../wxParse/wxParse.wxml" />
+<view style="padding-bottom:88rpx;" >
+    <view class="img_container">
+        <image src='{{result.clisPic}}'></image>
+    </view>
+    <view class="clisName">
+        <text class='doctor-name'>{{result.clisName}}</text> 
+    </view>
+    <view  class="clisName">
+        <text class='doctor-name'>￥{{result.clisPrice}}</text> 
+    </view>
+    <view  class="article">
+            <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+ </view>
+ <view class="foot_btn  mr20"  bindtap="gotoAppoint">
+        立即预约
+  </view>
+      

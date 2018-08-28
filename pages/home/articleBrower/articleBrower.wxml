@@ -1,0 +1,24 @@
+
+
+<view class='container'>
+  <!-- <view class='group'> -->
+    <view class='group-item bottom-line gutter-top' wx:for="{{articleData}}" wx:key="{{index}}" >
+      <view data-item="{{item.content.news_item[0].content}}" data-url="{{item.content.news_item[0].url}}"  data-index="{{index}}" bindtap="tapName">
+          <view class="article-item ">
+              <view class='article-content'>
+                <view class='article-title'>
+                  <text>{{item.content.news_item[0].title}}</text>
+                </view>
+                <view class="article-date">
+                  <text>{{formate(item.content.news_item[0].create_time)}}</text>
+                </view>
+              </view>
+              <view class='article-image'>
+                <image src="{{item.content.news_item[0].thumb_url}}"></image>
+              </view>
+            </view>
+      </view>
+     
+    </view>
+  <!-- </view> -->
+</view>

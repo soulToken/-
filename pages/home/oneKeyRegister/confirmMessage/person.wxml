@@ -1,0 +1,173 @@
+<view class='person-container'>
+
+    <view  class="notice_top">
+        <text>请填写或确认您的基本信息以保证就诊时验证</text>
+    </view>
+  <view class="user-info-plan" >
+    <view class='weui-cell is-link person-cell-bg'  wx:if="{{userInfo.name==null}}"  bindtap="writeName">
+      <view class='weui-cell-icon'>
+        <image src='/image/icon/my/personal_name.svg'></image>
+      </view>
+      <view class='weui-cell-title'>
+        <text>姓名</text>
+      </view>
+      <view class='weui-cell-value'>
+        <text  wx:if="{{showName}}">{{showName}}</text>
+        <text  wx:else class="notice_right">请输入姓名</text>
+      </view>
+    </view>
+    <view class='weui-cell  person-cell-bg'  wx:else>
+        <view class='weui-cell-icon'>
+          <image src='/image/icon/my/personal_name.svg'></image>
+        </view>
+        <view class='weui-cell-title'>
+          <text>姓名</text>
+        </view>
+        <view class='weui-cell-value'>
+          <text  wx:if="{{showName}}">{{showName}}</text>
+        </view>
+      </view>
+
+    <view class='weui-cell person-cell-bg is-link'  wx:if="{{!userInfo.sex}}" >
+        <picker bindchange="sexChange" value="{{currentSex}}" range="{{sexArr}}" mode = "selector">  
+            <view class='weui-cell-icon'>
+                <image src='/image/icon/my/personal_sex.svg'></image>
+              </view>
+              <view class='weui-cell-title'>
+                <text>性别</text>
+              </view>
+              <view class='weui-cell-value'>
+                <view wx:if="{{getSex}}">{{getSex}}</view>
+              </view>
+        </picker>  
+    </view>
+    <view class='weui-cell person-cell-bg'  wx:else >
+      
+            <view class='weui-cell-icon'>
+                <image src='/image/icon/my/personal_sex.svg'></image>
+              </view>
+              <view class='weui-cell-title'>
+                <text>性别</text>
+              </view>
+              <view class='weui-cell-value'>
+                <view wx:if="{{getSex}}">{{getSex}}</view>
+              </view>
+    
+    </view>
+
+    <view class='weui-cell person-cell-bg is-link'  wx:if="{{userInfo.birthday==null}}">
+
+        <picker mode="date" value="{{date}}" start="1978-01-01" end="{{maxDate}}" bindchange="bindDateChange">  
+            <view class='weui-cell-icon'>
+              <image src='/image/icon/my/personal_age.svg'></image>
+            </view>
+            <view class='weui-cell-title'>
+              <text>年龄</text>
+            </view>
+            <view class='weui-cell-value'>
+              <text>{{date}}</text>
+            </view>
+      </picker>
+
+    </view>
+
+    <view class='weui-cell person-cell-bg '  wx:else>
+            <view class='weui-cell-icon'>
+              <image src='/image/icon/my/personal_age.svg'></image>
+            </view>
+            <view class='weui-cell-title'>
+              <text>年龄</text>
+            </view>
+            <view class='weui-cell-value'>
+              <text>{{date}}</text>
+            </view>
+    </view>
+    <view class='weui-cell person-cell-bg is-link'   wx:if="{{userInfo.mobileValid=='0'}}"  bindtap="writePhone">
+      <view class='weui-cell-icon'>
+        <image src='/image/icon/my/personal_phone.svg'></image>
+      </view>
+      <view class='weui-cell-title'>
+        <text>手机</text>
+      </view>
+      <view class='weui-cell-value'>
+        <text  wx:if="{{showPhone&&showPhone!='null'}}">{{showPhone}}</text>
+        <text  wx:else class="notice_right">请输入手机号</text>
+      </view>
+    </view>
+
+    <view class='weui-cell person-cell-bg'   wx:else>
+        <view class='weui-cell-icon'>
+          <image src='/image/icon/my/personal_phone.svg'></image>
+        </view>
+        <view class='weui-cell-title'>
+          <text>手机</text>
+        </view>
+        <view class='weui-cell-value'>
+          <text wx:if="{{showPhone&&showPhone!='null'}}">{{showPhone}}</text>
+         
+        </view>
+      </view>
+
+    <view class='btn-box'>
+        <button bindtap="toggleDialog" class='register-btn'> 提交 </button>
+      </view>
+    <modal hidden="{{hiddenmodalput}}" title="请输入姓名"  confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+        <input type='text'  class="phoneText" maxlength="16"  bindinput="getName" placeholder="请输入内容" />  
+    </modal> 
+    <modal hidden="{{hiddenmodalput2}}" title="请输入手机号" confirm-text="确定" cancel-text="取消" bindcancel="cancel2" bindconfirm="confirm2">  
+        <input type='number' maxlength="11"  class="phoneText"  bindinput="getPhone" placeholder="请输入内容" />  
+    </modal> 
+
+
+  </view>
+</view>
+
+<view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+    <view class="zan-dialog__mask" />
+    <view class="zan-dialog__container">
+      <view class="register-dlg-content" wx:if="{{showSuccess}}">
+        <view class='register-status-icon'>
+          <image  src='/image/icon/register/online_booking_time_success.svg'></image>
+        </view>
+        <view class="register-status-text">
+          <text class='register-text'>您已成功预约恒信口腔惠州分院</text>
+          <text class='reigster-date'>就诊时间：{{showDate}} {{showTime}}</text>
+        </view>
+        <button class='register-btn'  bindtap="submit">确定</button>
+      </view>
+      <view  wx:else>
+          <view class="notice_text">
+              <text>为了更及时准确的为您提供服务 我们将短信验证您的手机</text>
+          </view>
+          <view class="input_container">
+             
+                  <image class="icon_phone"  src="/image/png/phone_phone@3x.png"></image>
+             
+              <view class="flex_1">
+                  <input type="number" class="input" value="{{showPhone}}"  bindinput="getPhoneNumber" maxlength="11" />
+              </view>
+          </view>
+          <view class="input_container">
+    
+              <image  class="icon_phone"  src="/image/png/phone_verification@3x.png"></image>
+          
+              <view class="flex_1">
+              <input type="number" class="input" value=""  bindinput="getVerifyCode" maxlength="6" />
+              </view>
+                    <text style="font-size:16px;color:rgba(0,128,255,1);margin-right:44rpx;" bindtap="getCode">{{btnText}}</text>
+          </view>
+
+          <view class="foot_btn ml20"   bindtap="nextSpeak">
+                下次再说
+          </view>
+          <view class="foot_btn  mr20"  bindtap="bindMobile">
+                立即验证
+          </view>
+  
+      </view>
+
+
+    </view>
+
+   
+  </view>

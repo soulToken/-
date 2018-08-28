@@ -1,0 +1,8 @@
+<!-- <import src="../../../wxParse/wxParse.wxml" /> -->
+<view >
+    <view  class="article">
+            <!-- <template is="wxParse" data="{{wxParseData:article.nodes}}" /> -->
+             <web-view  wx:if="{{result2}}" src="{{result2}}"></web-view>
+    </view>
+ </view>
+      

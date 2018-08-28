@@ -1,0 +1,67 @@
+{
+  "pages":[
+    
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/person/person",
+    "pages/anli/anli",
+    "pages/anli/detail/index",
+    "pages/regis/regis",
+    "pages/home/oneKeyRegister/oneKeyRegister",
+    "pages/home/oneKeyRegister/confirmMessage/person",
+    "pages/home/navigation/navigation",
+    "pages/home/articleBrower/articleBrower",
+    "pages/home/honor/honor",
+    "pages/home/actions/actions",
+    "pages/home/doctorTeam/doctorTeam",
+    "pages/person/registerList/registerList",
+    "pages/home/doctorDetail/doctorDetail",
+    "pages/home/clinicIntro/clinicIntro",
+    "pages/customer/customer",
+    "pages/home/wifi/wifi",
+    "pages/home/serviceDetail/index",
+    "pages/home/activityDetail/index",
+    "pages/home/articalDetail/index",
+    "pages/authorization/index",
+    "pages/person/bind/index"
+
+  ],
+  "usingComponents": {
+    "my-component": "/components/comments"
+  },
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#B18354",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#8E8E93",
+    "selectedColor": "#B18354",
+    "borderStyle": "black",
+    "position": "bottom",
+    "backgroundColor": "rgba(255,255,255,0.82)",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/image/tabBar/sy_1@3x.png",
+        "selectedIconPath": "/image/tabBar/sy@3x.png"
+      },
+      {
+        "pagePath": "pages/anli/anli",
+        "text": "案例",
+        "iconPath": "./image/tabBar/al_1@3x.png",
+        "selectedIconPath": "./image/tabBar/al@3x.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人中心",
+        "iconPath": "./image/tabBar/wd_1@3x.png",
+        "selectedIconPath": "./image/tabBar/wd@3x.png"
+      }
+    ]
+  }
+}

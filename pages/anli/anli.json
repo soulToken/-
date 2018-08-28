@@ -1,0 +1,9 @@
+{
+
+  "navigationBarTitleText": "精彩案例",
+  "enablePullDownRefresh":true,
+  "onReachBottomDistance":50,
+  "usingComponents": {
+    "no-data": "/components/noData/index"
+  }
+}

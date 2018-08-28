@@ -1,0 +1,278 @@
+@import "/wxParse/wxParse.wxss";
+.container{
+  background: #F0F2F5;
+}
+.flex-container{
+  background: #F0F2F5;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+}
+.bottom-line:after{
+  content:" ";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  border-bottom: 1px solid #D9D9D9;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+
+.group{
+  width: 100%;
+  position: relative;
+}
+.group-item{
+  background: white;
+  width: 100%;
+  position: relative;
+}
+
+.weui-cell{
+  background: white;
+  padding: 16px 16px;
+  font-size: 36rpx;
+  position: relative;
+}
+.weui-cell.is-link::before{
+  content:" ";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 16px;
+  border-top: 2px solid;
+  border-right: 2px solid ;
+  border-color: #808080;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.gutter-bottom::before,
+.weui-cell::after{
+  content:" ";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  border-bottom: 1px solid #D9D9D9;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+.weui-cell-title{
+  color: #000;
+  max-width: 450rpx;
+  display: inline-block;
+}
+.weui-cell-value{
+  float: right;
+  color: #000;
+}
+.weui-cell.is-link .weui-cell-value{
+  margin-right: 16px;
+}
+.weui-cell-icon{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: -5px;
+  margin-right: 16px;
+}
+.weui-cell-icon image{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.weui-cell-sub{
+  display: inline-block;
+  margin-left: 16px;
+}
+.weui-cell.is-link:active{
+  background: #EFEFEF;
+}
+.gray-value{
+  font-size: 32rpx;
+}
+.gray-value .weui-cell-value{
+  color: #7F7F7F;
+}
+swiper{
+  height:200px;
+}
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #D9D9D9;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:100;
+    background:#fff;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#434343;
+    margin: 0px 20px;
+}
+.active{
+    color:#4D99E9;
+    border-bottom: 2px solid #4D99E9;
+}
+.swiper-tab-content{
+  flex: 1;
+}
+
+
+.my-grid{
+  width: 100%;
+  position: relative;
+}
+.my-grid::before{
+  content: " ";
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 1px;
+  top: 0;
+  border-top: 1px solid #D9D9D9;
+  color: #D9D9D9;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+}
+.my-grid-item{
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+}
+.my-grid-item:nth-child(odd):after{
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-right: 1px solid #D9D9D9;
+  color: #D9D9D9;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  -webkit-transform: scaleX(0.5);
+          transform: scaleX(0.5);
+}
+.my-grid-item:before{
+  content: " ";
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 1px;
+  bottom: 0;
+  border-bottom: 1px solid #D9D9D9;
+  color: #D9D9D9;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+}
+
+.gutter-top{
+  margin-top: 10px;
+}
+
+.gutter-bottom{
+  margin-bottom: 10px;
+}
+.gutter-top::before{
+  content:" ";
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  border-top: 1px solid #D9D9D9;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+.person-cell-bg{
+  background: #F0F2F5;
+}
+.x-scroll{
+  width: 100%;
+}
+.zan-dialog{
+  background:rgba(255,255,255,1);
+}
+.zan-dialog__mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.zan-dialog__container {
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  background: white;
+  transform: translateY(150%);
+  transition: all 0.4s ease;
+  z-index: 12;
+  padding-bottom:30rpx;
+}
+
+.zan-dialog--show .zan-dialog__container {
+  transform: translateY(0);
+}
+
+.zan-dialog--show .zan-dialog__mask {
+  display: block;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none !important;
+}
+
+.own-btn{
+  background-color: #B18354;
+  color: white;
+  border-radius: 15px;
+  width:100%;
+}
+.own-btn:active{
+  background-color: #b19272;
+}
+
+.doctor-detail-btn{
+  height: 46rpx;
+  font-size: 24rpx;
+  border-radius:23rpx;
+  background: #FF8000;
+  color: white;
+  display: inline-block;
+  padding: 0px 24rpx;
+  line-height: 46rpx;
+  text-align: center; 
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.doctor-detail-btn:active{
+  background: #F2A04E;
+}

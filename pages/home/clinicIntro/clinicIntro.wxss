@@ -1,0 +1,54 @@
+page,
+.container{
+  background: #F0F2F5;
+}
+.clinic-head{
+  width: 100%;
+  height: 400rpx;
+}
+.clinic-head image{
+  width: 100%;
+  height: 100%;
+}
+.clinic-info-bar{
+  padding: 16px;
+}
+.clinic-name{
+  color: #000;
+  font-size: 36rpx;
+}
+.clinic-business-date{
+  color: #595959;
+  font-size: 28rpx;
+  margin-top: 10px;
+}
+.clinic-cell .weui-cell-icon{
+  margin-top: -36rpx;
+}
+.clinic-cell .weui-cell-title{
+  font-size: 28rpx;
+}
+
+.clinic-intro{
+  padding: 16px;
+  color: #000000;
+}
+.intro-title{
+  font-size: 40rpx;
+  text-align: center;
+  font-weight: bold;
+}
+.intro-text{
+  font-size: 32rpx;
+  margin-top: 16px;
+  white-space:normal; 
+  word-break:break-all;
+}
+
+.intro-img{
+  margin-top: 16px;
+}
+.intro-img image{
+  margin-top: 5px;
+  width:100%;
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "恒信口腔",
+  "backgroundColor": "#eeeeee",
+  "usingComponents": {
+    "no-data": "/components/noData/index"
+  }
+}

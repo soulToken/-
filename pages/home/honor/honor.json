@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "恒信荣誉",
+  "usingComponents": {
+    "no-data": "/components/noData/index"
+  }
+}

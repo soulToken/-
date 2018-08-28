@@ -1,0 +1,73 @@
+<view class='person-container'>
+  <view class='user-header' bindtap="changeHeadUrl">
+    <image src='{{userInfo.headUrl}}'></image>
+  </view>
+  <view class="user-info-plan" >
+    <view class='weui-cell is-link person-cell-bg'  bindtap="writeName">
+      <view class='weui-cell-icon'>
+        <image src='/image/icon/my/personal_name.svg'></image>
+      </view>
+      <view class='weui-cell-title'>
+        <text>姓名</text>
+      </view>
+      <view class='weui-cell-value'>
+        <text  wx:if="{{showName}}">{{showName}}</text>
+        <text  wx:else>请填写姓名</text>
+      </view>
+    </view>
+    <view class='weui-cell person-cell-bg is-link'>
+
+
+        <picker bindchange="sexChange" value="{{currentSex}}" range="{{sexArr}}" mode = "selector">  
+            <view class='weui-cell-icon'>
+                <image src='/image/icon/my/personal_sex.svg'></image>
+              </view>
+              <view class='weui-cell-title'>
+                <text>性别</text>
+              </view>
+              <view class='weui-cell-value'>
+                <view wx:if="{{getSex}}">{{getSex}}</view>
+              </view>
+        </picker>  
+    
+    </view>
+    <view class='weui-cell person-cell-bg is-link'>
+
+        <picker mode="date" value="{{date}}" start="1978-01-01" end="{{maxDate}}" bindchange="bindDateChange">  
+            <view class='weui-cell-icon'>
+              <image src='/image/icon/my/personal_age.svg'></image>
+            </view>
+            <view class='weui-cell-title'>
+              <text>年龄</text>
+            </view>
+            <view class='weui-cell-value'>
+              <text>{{date}}</text>
+            </view>
+      </picker>
+
+    </view>
+    <view class='weui-cell person-cell-bg is-link' bindtap="toBind">
+      <view class='weui-cell-icon'>
+        <image src='/image/icon/my/personal_phone.svg'></image>
+      </view>
+      <view class='weui-cell-title'>
+        <text>手机</text>
+      </view>
+      <view class='weui-cell-value'>
+        <text wx:if="{{userInfo.mobile&&userInfo.mobile!='null'}}">{{userInfo.mobile}}</text>
+        <text wx:else>去绑定</text>
+      </view>
+    </view>
+    <navigator class='weui-cell person-cell-bg gutter-top' url="/pages/person/registerList/registerList">
+      <view class='weui-cell-icon'>
+        <image src='/image/icon/my/personal_order.svg'></image>
+      </view>
+      <view class='weui-cell-title'>
+        <text>我的预约</text>
+      </view>
+    </navigator> 
+    <modal hidden="{{hiddenmodalput}}" title="请输入姓名" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+        <input type='text'  class="phoneText"  maxlength="16"  bindinput="getName" placeholder="请输入内容" />  
+    </modal> 
+  </view>
+</view>

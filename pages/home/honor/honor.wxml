@@ -1,0 +1,10 @@
+<view class='container'>
+  <view wx:if="{{images.length>0}}" class='container' style="width:100%;">
+      <view class='honor-grid' wx:for="{{images}}" wx:key="{{index}}">
+          <image src='{{item}}' data-index='{{index}}' bindtap='previewImg'></image>
+      </view>
+  </view>
+  <view wx:else>
+      <no-data ></no-data>
+  </view>
+</view>

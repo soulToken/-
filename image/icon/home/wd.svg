@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>wd_slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-285.000000, 0.000000)">
+            <g id="wd" transform="translate(285.000000, 0.000000)">
+                <rect id="Rectangle-3-Copy-8" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="29" height="29"></rect>
+                <path d="M17.0889187,16.5490788 C20.7692205,15.8443573 23.532581,12.8659541 23.5153436,9.32101016 C23.4954198,5.26622014 19.8451156,1.98178737 15.3781604,2.00007601 C10.9109814,2.01816141 7.29313722,5.33165277 7.31306101,9.38623957 C7.33052228,12.9313867 10.122761,15.887234 13.8100026,16.5622872 C8.24634433,17.3092757 3.97414967,21.6824909 4.00011775,26.9331534 C4.00307843,27.5249671 4.5339468,28.0025766 5.18591816,27.9999895 L25.8247106,27.9166747 C26.4766297,27.9138753 27.0027157,27.432056 26.9999895,26.8402879 C26.9742452,21.5894222 22.6592928,17.2511585 17.0889187,16.5490788 Z" id="Shape" fill="#B18354" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

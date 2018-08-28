@@ -1,0 +1,41 @@
+<view class='container'>
+  <view style='height:1px;'></view>
+  <view class='doctor-detail-plan gutter-top bottom-line'>
+    <view class='doctor-header'>
+      <image src='{{doctorobj.headUrl}}'></image>
+    </view>
+    <view class='doctor-detail-info'>
+      <view class='doctor-name'>
+        <text>{{doctorobj.doctorName}}</text>
+      </view>
+      <view class='doctor-rank'>
+        <text>{{doctorobj.positio}}</text>
+      </view>
+      <view class="doctor-good-at">
+        <text>{{doctorobj.speciality}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='doctor-intro gutter-top'>
+    <view class='doctor-intro-text'>
+      <text>
+          {{doctorobj.selfDescription}}    
+      </text>
+    </view>
+    <view class='doctor-detail-grid bottom-line'>
+      <view class='doctor-detail-item' wx:for="{{arr}}" wx:key="{{item}}">
+        <view class='item-img'>
+          <image bindtap="showImg" data-item="{{item}}" src='{{item}}'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='btn-bar'>
+  <view class="btn-box">
+    <button class='own-btn advice-btn'  open-type="contact">在线咨询</button>
+  </view>
+  <view class='btn-box'>
+    <button class='own-btn'  bindtap="phoneCall">电话联系</button>
+  </view>
+</view>

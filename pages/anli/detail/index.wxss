@@ -1,0 +1,13 @@
+
+.img_container{
+    width:100%;
+}
+.img_container image{
+    width:100%;
+}
+.clisName{
+    padding-left:24rpx;
+}
+.article{
+    padding:24rpx;
+}

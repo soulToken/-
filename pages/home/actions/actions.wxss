@@ -1,0 +1,33 @@
+.action-item{
+  width: 100%;
+  background: white;
+  display: flex;
+}
+
+.action-image{
+  width: 200rpx;
+  height: 200rpx;
+  border:1px solid #dbdbdb;
+}
+
+.action-image image{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.action-content{
+  flex: 1;
+  padding: 10px 16px;
+}
+
+.action-money{
+  color: #FFB343;
+  font-size: 14px;
+}
+
+.action-text{
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666666;
+}

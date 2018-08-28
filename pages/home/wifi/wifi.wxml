@@ -1,0 +1,6 @@
+<view class='container'>
+  <view style='height:1px;'></view>
+  <view class='wifi-img'>
+    <image src='{{wifiImg}}'></image>
+  </view>
+</view>

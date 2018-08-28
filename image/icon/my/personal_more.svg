@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>personal_more_slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-347.000000, -268.000000)" fill="#808080">
+            <path d="M354.152815,283.061924 L347.219113,276.209311 C346.926962,275.920851 346.926962,275.45482 347.219113,275.16561 L354.152815,268.312998 C354.57456,267.895667 355.260739,267.895667 355.683233,268.312998 C356.104979,268.730328 356.104979,269.407648 355.683233,269.824978 L349.751832,275.687836 L355.683233,281.549194 C356.104979,281.967274 356.104979,282.644593 355.683233,283.061924 C355.260739,283.479254 354.57456,283.479254 354.152815,283.061924" id="personal_more" transform="translate(351.499771, 275.687461) scale(-1, 1) translate(-351.499771, -275.687461) "></path>
+        </g>
+    </g>
+</svg>

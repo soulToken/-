@@ -1,0 +1,165 @@
+.notice_top {
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  color: rgba(165, 165, 165, 1);
+  line-height: 20px;
+  text-align: center;
+
+  width:500rpx;
+  text-align:center;
+  margin:39px auto 25px auto;
+ 
+}
+
+.person-container {
+  background: rgba(247, 247, 247, 1);
+  overflow: hidden;
+}
+
+page {
+  height: 100%;
+  width: 100%;
+  background: rgba(247, 247, 247, 1);
+}
+
+.btn-box {
+  padding: 16px;
+}
+
+.register-btn {
+  background-color: #B18354;
+  color: white;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.register-btn:active {
+  background-color: #b19272;
+}
+
+.register-plan {
+  background: white;
+  padding: 16px;
+}
+
+.register-plan-title {
+  color: #000;
+  font-size: 32rpx;
+}
+
+.register-time-content {
+  margin-top: 16px;
+}
+
+.phoneText {
+  border: 1rpx solid #dbdbdb;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+.register-dlg-content {
+  background: white;
+  padding: 80rpx 5px 50rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.register-status-icon {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 0 auto;
+}
+
+.register-status-icon image {
+  width: 100%;
+  height: 100%;
+}
+
+.register-status-text {
+  margin: 0 auto;
+  margin-top: 80rpx;
+  margin-bottom: 80rpx;
+  display: inline-block;
+}
+
+.register-text {
+  color: #000000;
+  font-size: 34rpx;
+  display: block;
+}
+
+.reigster-date {
+  color: #7F7F7F;
+  font-size: 30rpx;
+  display: block;
+  margin-top: 10px;
+}
+
+.notice_text {
+  font-size: 18px;
+  font-family: PingFangSC-Semibold;
+  color: rgba(177, 131, 84, 1);
+  line-height: 33px;
+  width: 504rpx;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 35rpx;
+  margin-bottom: 22rpx;
+}
+
+.input_container {
+  height: 50px;
+  /* background: rgba(247, 247, 247, 1); */
+  background:#fff;
+  border-radius: 14px;
+  border: 1px solid rgba(241, 240, 247, 1);
+  width: 710rpx;
+  margin-bottom: 28rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.foot_btn {
+  width: 700rpx;
+  height: 88rpx;
+  border-radius: 14px;
+  border: 1px solid rgba(165, 165, 165, 1);
+  float: left;
+  line-height: 88rpx;
+  text-align:center;
+}
+.ml20 {
+  margin-left: 20rpx;
+  float: left;
+  color:rgba(165,165,165,1);
+}
+.mr20 {
+  margin-right: 20rpx;
+  float: right;
+  background:rgba(177,131,84,1);
+  color:rgba(255,255,255,1);
+}
+.icon_phone{
+  width:40rpx;
+  height:52rpx;
+  margin-left:44rpx;
+}
+.icon_phone img{
+  width:100%;
+  height:100%;
+}
+.input{
+  margin-left: 40rpx;
+  /* height:100%; */
+  height:50px;
+}
+.flex_1{
+  flex:1;
+  height:50px;
+}
+.notice_right{
+  font-family:PingFangSC-Regular;
+color:rgba(165,165,165,1);
+}

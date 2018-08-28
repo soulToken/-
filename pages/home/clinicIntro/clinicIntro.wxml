@@ -1,0 +1,63 @@
+<view class='container'>
+  <view class='clinic-head'>
+    <image src="{{clinicBaseInfo.headUrl}}"/>
+  </view>
+
+  <view class='clinic-info-bar bottom-line'>
+    <view class='clinic-name'>
+      <text>{{clinicBaseInfo.clinicName}}</text>
+    </view>
+    <view class='clinic-business-date'>
+      <text>营业时间：上午{{clinicBaseInfo.amStartWork}}-{{clinicBaseInfo.amEndWork}}  下午{{clinicBaseInfo.pmStartWork}}-{{clinicBaseInfo.pmEndWork}}</text>
+    </view>
+  </view>
+
+  <view class='gutter-top'>
+    <view class='weui-cell person-cell-bg'>
+      <view class='weui-cell-icon'>
+        <image src='/image/icon/intro/dh.svg'></image>
+      </view>
+      <view class='weui-cell-title'>
+        <text>{{clinicBaseInfo.edtPhone}}</text>
+      </view>
+      <view class='weui-cell-value'>
+        <view class="doctor-detail-btn" bindtap='call'>拨打</view>
+      </view>
+    </view>
+    <view class='weui-cell person-cell-bg clinic-cell'>
+      <view class='weui-cell-icon'  >
+        <image src='/image/icon/intro/dizhi.svg'></image>
+      </view>
+      <view class='weui-cell-title'>
+        <text>{{clinicBaseInfo.address}}
+</text>
+      </view>
+      <view class='weui-cell-value'  bindtap="map">
+        <view class="doctor-detail-btn">导航</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='clinic-intro gutter-top'>
+    <view class='intro-title'>
+      <text>诊所介绍</text>
+    </view>
+    <view class='intro-text'>
+      <text>{{clinicBaseInfo.clinicIntroduce}}</text>
+    </view>
+  </view>
+  <view class='clinic-intro gutter-top'>
+    <view class='intro-title'>
+      <text>诊所环境</text>
+    </view>
+    <view class='intro-img'>
+      <block wx:for="{{clinicBaseInfo.clinicEnvironmentList}}" wx:key="{{index}}" >
+          <image src="{{item.fileUrl}}" class="slide-image"   bindtap="showPic"  data-index="{{index}}"/>
+      </block>
+      <!-- <image src='/image/icon/intro/001@3x.png'></image>
+      <image src='/image/icon/intro/002@3x.png'></image>
+      <image src='/image/icon/intro/003@3x.png'></image>
+      <image src='/image/icon/intro/004@3x.png'></image> -->
+    </view>
+  </view>
+</view>

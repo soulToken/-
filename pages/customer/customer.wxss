@@ -1,0 +1,13 @@
+/* pages/customer/customer.wxss */
+.img{
+    width:70%;
+    margin-left:15%;
+    margin-top:72rpx;
+}
+.customer_btn{
+    width:90%;
+    margin-left:5%;
+    background:rgba(177,131,84,1)!important;
+    border-radius:14px;
+    margin-top:60rpx;
+}

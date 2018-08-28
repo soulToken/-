@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>personal_name_slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-16.000000, -263.000000)">
+            <g id="personal_name" transform="translate(16.000000, 263.000000)">
+                <path d="M5.99653403,7.18741745 C5.99653403,10.0525209 8.36480021,12.3725446 11.2842605,12.3725446 C14.2037208,12.3725446 16.571987,10.0502306 16.571987,7.18741745 C16.571987,4.32460429 14.2037208,2 11.2842605,2 C8.36480021,2 5.99653403,4.32231404 5.99653403,7.18741745 Z M6.76026484,20.7640226 C4.61154208,20.6540906 3.39471103,20.4044533 3,18.9615954 C3,16.188102 5.31921925,12.2786444 8.11956555,12.2786444 L10.324342,12.9451073 C10.9456031,13.0550393 11.5691998,13.0550393 12.190461,12.9451073 L14.537707,12.2786444 C17.3660802,12.2786444 19.6572726,16.215585 19.6572726,18.9615954 C19.7109907,20.1273329 18.8631794,20.4044533 17.2236105,20.6540906 C15.3855183,20.9586939 10.324342,20.9586939 6.76026484,20.7640226 Z" id="Shape" fill="#4C9BFF" fill-rule="nonzero"></path>
+                <rect id="Rectangle" x="0" y="0" width="23" height="23"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

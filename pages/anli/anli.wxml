@@ -1,0 +1,41 @@
+<view class="container">
+      <!-- 注释这个是没请求数据 -->
+      <!-- <view wx:for="anliData" class='page_item' bindtap="goDetail">
+         <view class='anli-img'>
+          <image src='/image/icon/xiangmu/0040@3x.png'></image>
+         </view>
+         <view class='anli-info'>
+              <view class='anli-title'>牙齿种植</view>
+              <view class='anli-contente'>恒信口腔专业也吃矫正恒心口腔专业牙齿矫正恒信口腔专业也吃矫正恒心口腔专业牙齿矫正</view>
+              <view class='zixun_btn con-button'>资讯
+              </view>
+              
+         </view>
+      </view> -->
+
+      <!-- 下面的请求数据后的 -->
+      <view wx:if="{{anliData.length>0}}">
+            <view wx:for="{{anliData}}" class='page_item' wx:key="{{index}}"   data-content="{{item}}" catchtap="goDetail">
+                    <view class='anli-img'>
+                     <image src='{{item.casePicture}}'></image>
+                    </view>
+                    <view class='anli-info'>
+                         <view class='anli-title'>{{item.caseName}}</view>
+                         <view class='anli-contente'>{{item.caseSubname}}</view>
+                         <view class='zixun_btn con-button' catchtap="catch">
+                                咨询
+                             <button style="height:100%;width:100%;opacity: 0;position:absolute;top:0;bottom:0;"  open-type="contact"></button>
+                         </view>  
+                    </view>
+                 </view>
+      </view>
+      <view wx:else>
+            <no-data ></no-data>
+        </view>
+
+     
+
+</view>
+
+
+

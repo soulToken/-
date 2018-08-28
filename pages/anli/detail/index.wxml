@@ -1,0 +1,15 @@
+<!-- <import src="../../../wxParse/wxParse.wxml" /> -->
+<view >
+    <view  class="article">
+            <template is="wxParse" wx:if="{{show}}" data="{{wxParseData:article.nodes}}" />
+             <!-- <web-view  wx:if="{{result2}}" src="{{result2}}"></web-view> -->
+            <view>
+                    <text>
+                        暂无案例详情
+                    </text>
+
+            </view>
+
+    </view>
+ </view>
+      

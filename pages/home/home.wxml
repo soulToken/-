@@ -1,0 +1,90 @@
+<view class='container'>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}" >
+      <swiper-item>
+        <image src="{{item.bannerUrl}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="weui-grids">
+    <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
+      <navigator data-code='{{item.code}}' bindtap='onClick'  wx:if="{{item.name!='一键客服'}}">
+        <view class="weui-grid__icon">
+          <image src=" {{item.icon}}" mode="scaleToFill" />
+        </view>
+        <text class="weui-grid__label">{{item.name}}</text>
+      </navigator>
+      <view wx:else  style="position:relative;">
+          <button   open-type="contact"  class="button_contact">
+        
+            </button>
+        <view class="weui-grid__icon">
+          <image src=" {{item.icon}}" mode="scaleToFill" />
+        </view>
+        <text class="weui-grid__label">{{item.name}}</text>
+      </view>
+
+      
+    </view>
+  </view>
+  <view class='home-grid-plan'>
+    <view class='my-grid'>
+      <navigator class='my-grid-item' url='/pages/home/honor/honor'>
+        <view class='function-item'>
+          <image class='function-item-image' src='/image/icon/home/ry.svg'></image>
+          <text class='function-item-text'>恒信荣誉</text>
+        </view>
+      </navigator>
+      <navigator class='my-grid-item' url="/pages/home/clinicIntro/clinicIntro">
+        <view class='function-item'>
+          <image class='function-item-image' src='/image/icon/home/jj.svg'></image>
+          <text class='function-item-text'>诊所简介</text>
+        </view>
+      </navigator>
+      <navigator class='my-grid-item' url='/pages/home/articleBrower/articleBrower'>
+        <view class='function-item'>
+          <image class='function-item-image' src='/image/icon/home/wz.svg'></image>
+          <text class='function-item-text'>文章浏览</text>
+        </view>
+      </navigator>
+      <navigator class='my-grid-item' url='/pages/home/actions/actions'>
+        <view class='function-item'>
+          <image class='function-item-image' src='/image/icon/home/hd.svg'></image>
+          <text class='function-item-text'>优惠活动</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <navigator class='zjtd-bar' url='/pages/home/doctorTeam/doctorTeam'>
+    <text class='zjtd-text'>专家团队</text>
+  </navigator>
+  <view class='zjtd-plan'>
+    <navigator class='zjtd-item' url="/pages/home/doctorDetail/doctorDetail?id={{item.doctorId}}"   wx:for="{{doctorsList}}">
+      <image class='zjtd-header' src='{{item.headUrl}}'></image>
+      <text class='zjtd-name'>{{item.doctorName}}</text>
+      <text class='zjtd-title'>{{item.positio}}</text>
+    </navigator>
+   
+  </view>
+  <view class='my-grid home-function-bt'>
+    <navigator class='my-grid-item' url="/pages/home/serviceDetail/index?id={{item.id}}" wx:for="{{serviceList}}">
+      <view class='function-item-2'>
+        <image class='grid-item-image' src='{{item.clisPic}}'></image>
+        <text class='grid-item-text'>{{item.clisName}}</text>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+<view class="b1" hidden="{{showModal}}">
+  <view class="b2">
+      <image src='{{wifiImg}}'   bindtap="previewImage"/>
+  </view>
+  <view class="t_w">
+    <cover-view class="t_image" bindtap="close_mask">
+      <cover-image  src="../../image/qcm.png"></cover-image>
+    </cover-view>
+  </view>
+ </view>
+

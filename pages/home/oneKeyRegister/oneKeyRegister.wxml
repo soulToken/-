@@ -1,0 +1,65 @@
+<view class="container">
+  <view class='register-plan bottom-line gutter-top'>
+    <view class='register-plan-title'>
+      <text>选择预约日期(必选)</text>
+    </view>
+    <view class='register-plan-content'>
+      <scroll-view scroll-x class='x-scroll'>
+        <view class='date-bar'>
+          <view class='date-item {{date==item.time?"selected":""}}' data-id='{{item.time}}' bindtap="chooseDate"  wx:for="{{dates}}">
+            <text class='date-item-week'>{{item.value}}</text>
+            <view class='date-item-date'>
+              <text>{{item.label}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class='register-plan bottom-line gutter-top'>
+    <view class='register-plan-title'>
+      <text>选择预约时间(必选)</text>
+    </view>
+    <view class='register-plan-content'>
+      <view class='time-box'>
+        <view class='time-item'  wx:for="{{times}}">
+          <view class='time-text {{time==item?"selected":""}}' data-time="{{item}}" bindtap='chooseTime'>
+            <text>{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='gutter-top bottom-line'>
+      <picker bindchange="serviceNameChange"  range="{{serviceNameList}}" mode = "selector"> 
+            <view class='weui-cell is-link gray-value'>
+              <view class='weui-cell-title'>
+                <text>选择诊疗项目</text>
+              </view>
+              <view class='weui-cell-value'>
+                <text >{{choosedServiceName||"默认项目"}}</text>
+              </view>
+            </view>
+      </picker>
+  </view>
+
+
+  <view class='gutter-top'>
+      <picker bindchange="doctorNameChange"  range="{{doctorNameList}}" mode = "selector"> 
+            <view class='weui-cell is-link gray-value'>
+              <view class='weui-cell-title'>
+                <text>选择诊疗医生</text>
+              </view>
+              <view class='weui-cell-value'>
+                <text>{{choosedDoctorName||"默认医生"}}</text>
+              </view>
+            </view>
+      </picker>
+  </view>
+  <view class='btn-box'>
+    <button bindtap="toggleDialog" class='register-btn'> 下一步 </button>
+  </view>
+</view>
+
+

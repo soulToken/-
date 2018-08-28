@@ -1,0 +1,25 @@
+<view class='container'>
+  <view class='group'>
+    <view class='group-item bottom-line' wx:for="{{arr}}"  >
+        <navigator   url="/pages/home/activityDetail/index?id={{item.id}}">
+            <view class='action-item'>
+                <view class='action-image'>
+                  <image src='{{item.activityPicture}}'></image>
+                </view>
+                <view class='action-content'>
+                  <view class='action-money' wx:if="{{item.activityPrice}}">
+                    <text>￥{{item.activityPrice}}</text>
+                  </view>
+                  <view class='action-money' wx:else>
+                    <text>暂无相关价格</text>
+                  </view>
+                  <view class='action-text'>
+                    <text>{{item.activityName}}</text>
+                  </view>
+                </view>
+              </view>
+        </navigator> 
+     
+    </view>
+  </view>
+</view>

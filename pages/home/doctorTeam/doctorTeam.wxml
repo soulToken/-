@@ -1,0 +1,28 @@
+<view class='container'>
+  <view class='group'>
+    <view class='group-item bottom-line gutter-top'>
+      <view wx:for="{{doctorList}}" class='doctor-item'>
+        <view class='doctor-header'>
+          <image src='{{item.headUrl}}'></image>
+        </view>
+        <view class='doctor-content'>
+          <view class='doctor-info-bar'>
+            <view class="title-top">
+              <text class='doctor-name'>{{item.doctorName}}</text>
+              <navigator url='/pages/home/doctorDetail/doctorDetail?id={{item.doctorId}}' class='doctor-detail-btn' style="right:0;top:0;">查看详情</navigator>
+            </view>
+            <view>
+              <text class='doctor-rank'>{{item.positio}}</text>
+            </view>
+            <view>
+           
+            </view>
+          </view>
+          <view class="doctor-good-at">
+            <text>{{item.selfDescription}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

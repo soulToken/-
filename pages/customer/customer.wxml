@@ -1,0 +1,7 @@
+<!-- <button open-type="contact">在线客服</button> -->
+
+<image src="/image/png/qiantai@3x.png" class="img">
+
+</image>
+
+<button type="primary" class="customer_btn" open-type="contact" >客服咨询</button>

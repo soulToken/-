@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="89px" height="89px" viewBox="0 0 89 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>online_booking_time_fail_slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-144.000000, -416.000000)">
+            <g id="online_booking_time_fail" transform="translate(144.000000, 416.000000)">
+                <path d="M2.82313855e-15,44.5 C2.82313855e-15,69.0766714 19.9233286,89 44.5,89 C69.0766714,89 89,69.0766714 89,44.5 C89,19.9233286 69.0766714,1.41156927e-15 44.5,0 C19.9233286,-1.41156927e-15 2.82313855e-15,19.9233286 2.82313855e-15,44.5 Z" id="Shape" fill="#FFAA00" fill-rule="nonzero"></path>
+                <path d="M40.5,40.5 L40.5,19 L48.5,19 L48.5,40.5 L70,40.5 L70,48.5 L48.5,48.5 L48.5,70 L40.5,70 L40.5,48.5 L19,48.5 L19,40.5 L40.5,40.5 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(44.500000, 44.500000) rotate(45.000000) translate(-44.500000, -44.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

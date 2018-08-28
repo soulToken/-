@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="usermotto">
+        <text class="user-motto">恒信口腔</text>
+    </view>
+    <view class="notice_me">
+        <text >申请获取您的公开信息（昵称，头像等）</text>
+      </view>
+  <view class="userinfo">
+    <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo" lang="zh_CN" class="getMess"> 获取头像昵称 </button>
+    <!-- wx:if="{{!hasUserInfo && canIUse}}" -->
+    <!-- <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> -->
+  </view>
+</view>

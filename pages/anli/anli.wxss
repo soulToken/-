@@ -1,0 +1,64 @@
+/* pages/anli/anli.wxss */
+
+page{
+ background-color: #F2F2F2;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.page_item{
+  background-color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+}
+.page_item:active{
+  background-color: #dedede;
+}
+.anli-img{
+  border:1px solid #dbdbdb;
+}
+.anli-img image{
+ width: 200rpx;
+ height: 180rpx;
+}
+.anli-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+.anli-title{
+  font-size: 32rpx;
+  color: #000000;
+}
+.anli-contente{
+  margin-top: 5px;
+  font-size: 24rpx;
+  color: #7F7F7F;
+}
+
+.zixun_btn{
+  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+.con-button{
+  height: 50rpx;
+  color: white;
+  background-color: #FF8000;
+  font-size: 28rpx;
+  border-radius: 30rpx;
+  margin-top: 5px;
+  line-height: 50rpx;
+  position: relative;
+  text-align: center;
+}
+
+.hoverbutton{
+  background-color: lightgray;
+}
